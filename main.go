@@ -1,9 +1,10 @@
 package main
 
 import (
-     "fmt"
+	"fmt"
 
-	 "github.com/rivo/tview"
+	"github.com/bloomingchad/RadioHopper/internal/libmpv"
+	"github.com/rivo/tview"
 )
 
 func main() {
