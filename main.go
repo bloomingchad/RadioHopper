@@ -15,8 +15,8 @@ func check(err error) {
 	}
 }
 
-// const ah_fm = "https://nl.ah.fm/live"
-const _1fmdeephouse = "https://strm112.1.fm/deephouse_128"
+const url = "https://nl.ah.fm/live"
+// "https://strm112.1.fm/deephouse_128"
 
 func main() {
 	fmt.Println("RadioHopper is warming up...")
@@ -36,7 +36,13 @@ func main() {
 		check(err)
 	}()
 
-	media, err := player.LoadMediaFromURL(_1fmdeephouse)
+	err = vlc.SetAppName("RadioHopper", "RadioHopper/0.1")
+	check(err)
+
+	err = player.SetRole(vlc.PlayerRoleMusic)
+	check(err)
+
+	media, err := player.LoadMediaFromURL(url)
 	check(err)
 
 	err = player.SetMedia(media)
