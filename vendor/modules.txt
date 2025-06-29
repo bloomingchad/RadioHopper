@@ -1,3 +1,6 @@
+# github.com/adrg/libvlc-go/v3 v3.1.6
+## explicit; go 1.13
+github.com/adrg/libvlc-go/v3
 # github.com/gdamore/encoding v1.0.1
 ## explicit; go 1.9
 github.com/gdamore/encoding
